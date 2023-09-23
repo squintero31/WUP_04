@@ -81,4 +81,8 @@ plot(TukeyHSD(model1,conf.level = 0.99),las=2)
 
 # Discussion and Conclusion
 
+To compare mean values between different groups in an ANOVA, the Tukey HSD test is frequently employed. It offers a mechanism of determining which particular pairs of groups have significantly differing means.The visually pleasing plot and complete visibility of the labels are both made possible by the generous left margin established by par(mar = c(3,15,2,2)).
+The intervals shown in the plot can be trusted to be accurate because a 99% confidence level was chosen.
+
+
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
