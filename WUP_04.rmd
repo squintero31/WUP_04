@@ -51,6 +51,9 @@ ggplot(data = mydata, aes(x = DEGREE, y = WORDSUM)) +
   labs(x = "DEGREE", y = "WORDSUM SCORE", title = "WORDSUM EXPLAINED BY DEGREE") +
   theme(plot.title = element_text(hjust = 0.5, size = 16))
 ```
+The IQR of the high school and LT High School appears to be lower overall than the median of all college groupings.
+
+
 
 ### Numerical Descriptive Results
 
