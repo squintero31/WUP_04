@@ -14,6 +14,11 @@ require(tigerstats)
 mydata <- read.csv(file = "GSScsv.csv")
 
 ```
+```{r eval=FALSE}
+mydata <- mydata %>%
+mutate(across(where(is.character), as.factor))
+```
+
 
 # Introduction
 
@@ -29,6 +34,7 @@ $H_a$ There is a significant difference in average score on the WORDSUM test bet
 
 Comparing the GSS data set's numerical and categorical data using the ChatGPT and CandP auxiliary files. We will contrast WORDSUM and examine the impact of educational level.
 
+
 # Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
@@ -38,6 +44,13 @@ Comparing the GSS data set's numerical and categorical data using the ChatGPT an
 ### Graphical Descriptive Results
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r} 
+ggplot(data = mydata, aes(x = DEGREE, y = WORDSUM)) +
+  geom_boxplot(notch = FALSE, outlier.colour = "red", outlier.size = 2, fill = "darkgray") +
+  labs(x = "DEGREE", y = "WORDSUM SCORE", title = "WORDSUM EXPLAINED BY DEGREE") +
+  theme(plot.title = element_text(hjust = 0.5, size = 16))
+```
 
 ### Numerical Descriptive Results
 
