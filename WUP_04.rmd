@@ -11,6 +11,7 @@ output:
 require(knitr)
 require(tidyverse)
 require(tigerstats)
+mydata <- read.csv(file = "GSScsv.csv")
 
 ```
 
@@ -25,6 +26,8 @@ $H_a$ There is a significant difference in average score on the WORDSUM test bet
 # Methods
 
 <!--Mention that you intend to use chatGPT to the greatest extent possible. Give credit to chatGPT when you use it to create code in your report. Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
+
+Comparing the GSS data set's numerical and categorical data using the ChatGPT and CandP auxiliary files. We will contrast WORDSUM and examine the impact of educational level.
 
 # Results
 
